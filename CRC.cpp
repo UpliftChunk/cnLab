@@ -32,10 +32,9 @@ string polyToBinary(string poly){
       (isdigit(c))? nums<<c: nums<<" ";
    
    int tmp, result=0;
-   while(nums>>tmp) {
-        if((result&2) && tmp==1) tmp=0;
+   while(nums>>tmp) 
         result|= (1<<tmp);
-   }
+   
    char binaryString[32];
    itoa(result, binaryString, 2);
 
@@ -87,7 +86,7 @@ int main() {
 
 // OUTPUT:
 /*
-Enter divisor :  x^3 + x^1 + 1
+Enter divisor :  x^3 + x^1 + x^0
 Enter dataword:  11010011101100
 
         Sender Side:
